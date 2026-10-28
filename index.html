@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Açaídera Foz do Iguaçu | O Melhor Açaí da Cidade</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #FDF5E6; /* Fundo bege claro, igual ao logo */
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #4B0082; /* Roxo escuro (Açaí) */
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 5px solid #FF8C00; /* Laranja */
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 900;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .logo-text span {
+            color: #FF8C00; /* Laranja */
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(75, 0, 130, 0.8), rgba(75, 0, 130, 0.9)), url('https://images.unsplash.com/photo-1590301157890-4810ed352733?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 34px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #eee;
+            font-weight: 700;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            font-weight: 900;
+            border-radius: 50px;
+            font-size: 18px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: transform 0.3s;
+            animation: pulse 2s infinite;
+        }
+
+        /* Efeito de pulsar no botão */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .btn-whatsapp:hover {
+            transform: scale(1.1);
+            animation: none;
+        }
+
+        /* Barra de Entrega */
+        .info-bar {
+            background-color: #FF8C00; /* Laranja */
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-weight: 900;
+            font-size: 15px;
+        }
+
+        /* Seção do Cardápio */
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            color: #4B0082;
+            margin: 50px 0 30px 0;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .menu-container {
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .menu-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-left: 6px solid #4B0082;
+        }
+
+        .menu-card h3 {
+            color: #4B0082;
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .item-lista {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 15px;
+            color: #444;
+            font-weight: 700;
+        }
+
+        .item-lista span:last-child {
+            color: #FF8C00; /* Preço em laranja */
+        }
+
+        /* Seção de Acompanhamentos */
+        .acompanhamentos-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .item-acompanhamento {
+            background-color: #F4F4F4;
+            padding: 10px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: 700;
+            color: #555;
+        }
+
+        .item-acompanhamento span:last-child {
+            color: #4B0082; /* Preço em roxo */
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #4B0082;
+            color: #fff;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">Açaí<span>dera</span></div>
+    </header>
+
+    <section class="hero">
+        <h1>O Açaí mais cremoso de Foz!</h1>
+        <p>Monte o seu copo, escolha os acompanhamentos e peça já o seu pelo WhatsApp.</p>
+        
+        <!-- Link do WhatsApp que a cliente passou -->
+        <a href="https://wa.me/5545998386794" class="btn-whatsapp" target="_blank">Pedir Agora</a>
+    </section>
+
+    <div class="info-bar">
+        🛵 Delivery Rápido | Peça pelo WhatsApp (45) 99838-6794
+    </div>
+
+    <h2 class="section-title">Nosso Cardápio</h2>
+    
+    <section class="menu-container">
+        <!-- Card 1: Açaí Puro -->
+        <div class="menu-card">
+            <h3>🍇 Açaí Puro</h3>
+            <div class="item-lista"><span>200 ML</span> <span>R$ 17,00</span></div>
+            <div class="item-lista"><span>300 ML</span> <span>R$ 21,00</span></div>
+            <div class="item-lista"><span>500 ML</span> <span>R$ 28,00</span></div>
+            <div class="item-lista"><span>700 ML</span> <span>R$ 37,00</span></div>
+        </div>
+
+        <!-- Card 2: Cupuaçu Puro -->
+        <div class="menu-card" style="border-left-color: #FF8C00;">
+            <h3 style="color: #FF8C00;">🥤 Cupuaçu Puro</h3>
+            <div class="item-lista"><span>200 ML</span> <span>R$ 17,00</span></div>
+            <div class="item-lista"><span>300 ML</span> <span>R$ 23,00</span></div>
+            <div class="item-lista"><span>500 ML</span> <span>R$ 30,00</span></div>
+            <div class="item-lista"><span>700 ML</span> <span>R$ 40,00</span></div>
+        </div>
+
+        <!-- Card 3: Combos -->
+        <div class="menu-card">
+            <h3>🍧 Combos Especiais</h3>
+            <div class="item-lista"><span>Gamadinha (200ml - 700ml)</span> <span>A partir de R$ 16,00</span></div>
+            <div class="item-lista"><span>Casadinho com Cupuaçu</span> <span>A partir de R$ 17,00</span></div>
+            <div class="item-lista"><span>Casadinho com Cupuaçu (700ml)</span> <span>R$ 40,00</span></div>
+        </div>
+
+        <!-- Card 4: Acompanhamentos -->
+        <div class="menu-card" style="border-left-color: #FF8C00;">
+            <h3 style="color: #FF8C00;">🍫 Acompanhamentos (R$ 4,00 a R$ 12,00)</h3>
+            <div class="acompanhamentos-grid">
+                <div class="item-acompanhamento"><span>Mel</span> <span>R$ 5,00</span></div>
+                <div class="item-acompanhamento"><span>Nutella</span> <span>R$ 12,00</span></div>
+                <div class="item-acompanhamento"><span>Banana</span> <span>R$ 4,00</span></div>
+                <div class="item-acompanhamento"><span>Morango</span> <span>R$ 9,00</span></div>
+                <div class="item-acompanhamento"><span>Kiwi</span> <span>R$ 7,00</span></div>
+                <div class="item-acompanhamento"><span>Leite Condensado</span> <span>R$ 4,50</span></div>
+                <div class="item-acompanhamento"><span>Leite Ninho</span> <span>R$ 4,50</span></div>
+                <div class="item-acompanhamento"><span>Paçoca</span> <span>R$ 6,00</span></div>
+                <div class="item-acompanhamento"><span>Disquete</span> <span>R$ 8,00</span></div>
+                <div class="item-acompanhamento"><span>Negresco</span> <span>R$ 7,00</span></div>
+                <div class="item-acompanhamento"><span>Ovomaltine</span> <span>R$ 7,00</span></div>
+                <div class="item-acompanhamento"><span>Granola</span> <span>R$ 4,50</span></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Açaídera Foz do Iguaçu. Todos os direitos reservados.</p>
+        <p>📍 Foz do Iguaçu - PR</p>
+        <p>Atendimento: (45) 99838-6794</p>
+    </footer>
+
+</body>
+</html>
